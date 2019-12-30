@@ -1,0 +1,36 @@
+/*Contenedor*/
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Header*/
+.site-header.inicio {
+    background-image: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+/*Navegacion*/
+.navegacion a {
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.navegacion a:hover {
+    color: #71b100;
+}
+
+.navegacion a:last-of-type {
+    margin: 0;    
+}
