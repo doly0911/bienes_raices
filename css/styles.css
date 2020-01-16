@@ -1,7 +1,30 @@
+html{
+font-size: 62.5% /** Reset para REM*s. Donde 62,5% = 10px*/
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+/**Globales**/
 /*Contenedor*/
 .contenedor {
-    max-width: 1200px;
+    max-width: 120rem; /**Equivale a 1200px porque 120*10px= 1200px**/
     margin: 0 auto;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3,4rem;
+}
+h3 {
+    font-size: 3rem;
+}
+h4 {
+    font-size: 2.6rem;
 }
 
 /*Header*/
@@ -10,27 +33,50 @@
     background-position: center center;
     background-size: cover;
     height: 100vh;
-    min-height: 600px;
+    min-height: 60rem;
+}
+
+.contenido-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.contenido-header h1 {
+    color: white;
+    padding-bottom: 2rem;
+    max-width: 60rem;   
+    line-height: 2;
 }
 
 .barra {
     display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
+
+    /*Separa los elementos de extremo a extremo horizontalmente*/
+    justify-content: space-between; 
+
+    /*espacio entre el contenido del elemento y su borde verticalmente*/
+    align-items: center;
+
+    /*Separa el elemento hacia adentro 30px del borde superior, el margin separa el elemnto en conjunto con el borde*/
+    padding-top: 3rem;
 }
 
 /*Navegacion*/
 .navegacion a {
     color: aliceblue;
-    text-decoration: none;
-    margin-right: 20px;
-    font-size: 18px;
+    text-decoration: none; /*Para quitar el subrayado*/
+    margin-right: 2rem; /*Separacion con el sgte elemento*/
+    font-size: 1.8rem;
 }
 
+/*Pseudo selector, al pasar por el elemento con el puntero cambia de color */
 .navegacion a:hover {
     color: #71b100;
 }
 
+/*Pseudo selector, el last of type selecciona el ultimo elmento*/
 .navegacion a:last-of-type {
     margin: 0;    
 }
