@@ -1,10 +1,15 @@
 html{
-font-size: 62.5% /** Reset para REM*s. Donde 62,5% = 10px*/
+font-size: 62.5%; /** Reset para REM*s. Donde 62,5% = 10px*/
+box-sizing: border-box;
 }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
 
 body{
     font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
+    line-height: 2;
 }
 
 /**Globales**/
@@ -12,19 +17,61 @@ body{
 .contenedor {
     max-width: 120rem; /**Equivale a 1200px porque 120*10px= 1200px**/
     margin: 0 auto;
-}
+   }
 
 h1 {
-    font-size: 3.8rem;
+    font-size: 3.8 rem;
 }
 h2 {
-    font-size: 3,4rem;
+    font-size: 3,4 rem;
 }
 h3 {
-    font-size: 3rem;
+    font-size: 3 rem;
 }
 h4 {
-    font-size: 2.6rem;
+    font-size: 2.6 rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+/** Utilidades**/
+.seccion {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+.d-block {
+    display: block!important;
+}
+
+/**Botones**/
+.boton {
+    text-decoration: none;
+    padding: 1rem 3rem;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+}
+
+.boton-naranja {
+    background: orange;
+}
+
+.boton-verde {
+background-color: #71b100;
 }
 
 /*Header*/
@@ -79,4 +126,49 @@ h4 {
 /*Pseudo selector, el last of type selecciona el ultimo elmento*/
 .navegacion a:last-of-type {
     margin: 0;    
+}
+
+/** Iconos nosotros **/
+.iconos-nosotros {
+    display: flex;
+    justify-content: space-between;
+}
+.iconos {
+    flex-basis: calc(33.3% - 1rem);
+    text-align: center;
+}
+
+.iconos h3 {
+    text-transform: uppercase;
+}
+
+/**Anuncios**/
+.contenedor-anuncios {
+    display: flex;
+    justify-content: space-between;         
+}
+
+.anuncio {
+    border: 1px solid #b5b5b5;
+    background: #f5f5f5;
+    flex-basis: calc(33.3% - 1rem);  
+            
+}
+
+.contenido-anuncio {
+    padding: 2rem;     
+}
+
+.contenido-anuncio h3, .contenido-anuncio p {
+    margin: 0;
+}
+
+.precio {
+    color: #71b100;
+    font-weight: 500;
+}
+
+.ver-todas {
+display: flex;
+justify-content: flex-end;
 }
