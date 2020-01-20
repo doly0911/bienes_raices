@@ -168,7 +168,45 @@ background-color: #71b100;
     font-weight: 500;
 }
 
+.iconos-caracteristicas {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    justify-content: space-evenly;    
+}
+
+.iconos-caracteristicas li {    
+    display: flex;
+}
+
+.iconos-caracteristicas li img {
+    margin-left: 2em;
+}
+
+.iconos-caracteristicas li p {
+    padding: 1em;
+}
+
 .ver-todas {
 display: flex;
 justify-content: flex-end;
+}
+
+/**Contenido Home**/
+.imagen-contacto {
+    background-image: url(../img/encuentra.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenido-contacto {
+    color: white;
+    flex: 1;
+}
+
+.contenido-contacto p {
+    font-size: 1.8rem;
 }
